@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  let list = [1, 2, 3];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        {list.map(
+          (n) => (
+            <h1>{n}</h1>
+          ), // tag 사용시 n 에 중괄호 사용. 없으면 중괄호 사용 안 해도 됨.
+        )}
+      </div>
+      ;
     </div>
   );
 }
